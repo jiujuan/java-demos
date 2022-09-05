@@ -55,7 +55,7 @@ class TomStudent extends student {
         return 12;
     }
 
-    public void setTomeAge(int age) {
-        this.setAge(age);
+    public void setTomAge(int age) {
+        super.setAge(age);
     }
 }
