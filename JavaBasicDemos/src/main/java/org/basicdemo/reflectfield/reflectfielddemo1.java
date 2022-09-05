@@ -41,7 +41,7 @@ public class reflectfielddemo1 {
         // 没有设置前的name值
         System.out.println("name value before setting: "+stu.getName());
         // 来设置值
-        nameField.setAccessible(true); // 因为是private，所以先要设置可写。相当于打开一个开关，原本是不可以写的。
+        nameField.setAccessible(true); // 因为是private，所以先要设置可访问。相当于打开一个开关，原本是不可以写的。
         nameField.set(obj, "jimmy");
         System.out.println("name value after setting: " + stu.getName());
     }
